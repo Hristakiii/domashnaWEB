@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <header>
+            <h1>Паметен Дом</h1>
+            <nav>
+                <ul>
+                    <li><a href="#spalna">Спална</a></li>
+                    <li><a href="#dnevna">Дневна</a></li>
+                    <li><a href="#kujna">Кујна</a></li>
+                    <li><a href="#gradina">Градина</a></li>
+                    <li><a href="#notifikacii">Нотификации</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+            <section id="spalna">
+                    <h2>Спална</h2>
+                    <p>
+                        <label>Клима (°C):
+                            <input type="number" value="20" readonly>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Јачина на светло:
+                            <input type="range" min="0" max="100" value="75" enabled>
+                        </label>
+                    </p>
+                    <p>
+                        Аларм:
+                        <label><input type="radio" name="alarm" value="on" checked disabled> Вклучен</label>
+                        <label><input type="radio" name="alarm" value="off" disabled> Исклучен</label>
+                    </p>
+
+            </section>
+            <section id="dnevna">
+                    <h2>Дневна</h2>
+                    <p>
+                        <label>Температура (°C):
+                            <input type="number" value="22" readonly>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Јачина на звук:
+                            <input type="range" min="0" max="100" value="50" enabled>
+                        </label>
+                    </p>
+                    <p>
+                    <label>Влажност (%):
+                        <meter min="0" max="100" value="50" low="30" high="70" optimum="50">
+                            <span id="humidityValue">50</span>%
+                        </meter>
+                    </label>
+                    </p>
+            </section>
+            <section id="kujna">
+                    <h2>Кујна</h2>
+                    <p>
+                        <label>Air fryer температура (°C):
+                            <input type="range" min="0" max="200" value="150">
+                        </label>
+                    </p>
+                    <p>
+                        <label>Печка температура (°C):
+                            <input type="number" value="180">
+                        </label>
+                    </p>
+                    <p>
+                        <label>Печка време (мин):
+                            <input type="number" value="30">
+                        </label>
+                    </p>
+            </section>
+            <section id="gradina">
+                    <h2>Градина</h2>
+                    <p>
+                        <label>Датум на градење на тревникот:
+                            <input type="date" value="2024-06-01">
+                        </label>
+                    </p>
+                    <p>
+                        <label>УВ индекс:
+                            <input type="number" value="5" readonly>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Статус на почвата:
+                            <select>
+                                <option value="suva">Сува</option>
+                                <option value="vlazna" selected>Влажна</option>
+                                <option value="mokra">Мокра</option>
+                            </select>
+                        </label>
+                    </p>
+
+            </section>
+            <section id="notifikacii">
+                    <h2>Нотификации</h2>
+
+                    <details>
+                        <summary>Градина: висок УВ индекс</summary>
+                        <p>Правило: 0 &le; УВ индекс &le; 3 е во ред.</p>
+                        <p>Моментална вредност: <strong>5</strong>, надвор од дозволениот опсег. Препорака: заштита од сонце.</p>
+                    </details>
+
+                    <details>
+                        <summary>Дневна: температурата е во ред</summary>
+                        <p>Правило: 20 &lt; температура &lt; 24 °C.</p>
+                        <p>Моментална вредност: <strong>22 °C</strong>.</p>
+                    </details>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Христос дамјановски 140/2024 <a href="mailto:kti1402024@feit.ukim.edu.mk">kti1402024@feit.ukim.edu.mk</a> </p>
+        </footer>
+    </body>
+</html>
