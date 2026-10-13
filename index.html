@@ -26,16 +26,34 @@
                         <label>Клима (°C):
                             <input type="number" value="20" readonly>
                         </label>
+                        <br>
+                        <label><input type="checkbox" checked> Вклучен</label>
+                        <br>
+                        <label>Батерија:
+                            <progress max="100" value="30"></progress> 30%
+                        </label>
                     </p>
                     <p>
                         <label>Јачина на светло:
-                            <input type="range" min="0" max="100" value="75" enabled>
+                            <input type="range" min="0" max="100" value="75" >
+                        </label>
+                        <br>
+                        <label><input type="checkbox" checked> Вклучен</label>
+                        <br>
+                        <label>Батерија:
+                            <progress max="100" value="90"></progress> 90%
                         </label>
                     </p>
                     <p>
                         Аларм:
                         <label><input type="radio" name="alarm" value="on" checked disabled> Вклучен</label>
                         <label><input type="radio" name="alarm" value="off" disabled> Исклучен</label>
+                        <br>
+                        <label><input type="checkbox" checked> Вклучен</label>
+                        <br>
+                        <label>Батерија:
+                            <progress max="100" value="65"></progress> 65%
+                        </label>
                     </p>
 
             </section>
@@ -45,18 +63,36 @@
                         <label>Температура (°C):
                             <input type="number" value="22" readonly>
                         </label>
-                    </p>
-                    <p>
-                        <label>Јачина на звук:
-                            <input type="range" min="0" max="100" value="50" enabled>
+                        <br>
+                        <label><input type="checkbox" checked> Вклучен</label>
+                        <br>
+                        <label>Батерија:
+                            <progress max="100" value="80"></progress> 80%
                         </label>
                     </p>
                     <p>
-                    <label>Влажност (%):
-                        <meter min="0" max="100" value="50" low="30" high="70" optimum="50">
-                            <span id="humidityValue">50</span>%
-                        </meter>
-                    </label>
+                        <label>Јачина на звук:
+                            <input type="range" min="0" max="100" value="50" >
+                        </label>
+                        <br>
+                        <label><input type="checkbox" checked> Вклучен</label>
+                        <br>
+                        <label>Батерија:
+                            <progress max="100" value="55"></progress> 55%
+                        </label>
+                    </p>
+                    <p>
+                        <label>Влажност (%):
+                            <meter min="0" max="100" value="50" low="30" high="70" optimum="50">
+                                <span id="humidityValue">50</span>%
+                            </meter>
+                        </label>
+                        <br>
+                        <label><input type="checkbox"> Вклучен</label>
+                        <br>
+                        <label>Батерија:
+                            <progress max="100" value="5"></progress> 5%
+                        </label>
                     </p>
             </section>
             <section id="kujna">
@@ -65,15 +101,33 @@
                         <label>Air fryer температура (°C):
                             <input type="range" min="0" max="200" value="150">
                         </label>
+                        <br>
+                        <label><input type="checkbox" checked> Вклучен</label>
+                        <br>
+                        <label>Батерија:
+                            <progress max="100" value="100"></progress> 100%
+                        </label>
                     </p>
                     <p>
                         <label>Печка температура (°C):
                             <input type="number" value="180">
                         </label>
+                        <br>
+                        <label><input type="checkbox" checked> Вклучен</label>
+                        <br>
+                        <label>Батерија:
+                            <progress max="100" value="70"></progress> 70%
+                        </label>
                     </p>
                     <p>
                         <label>Печка време (мин):
                             <input type="number" value="30">
+                        </label>
+                        <br>
+                        <label><input type="checkbox" checked> Вклучен</label>
+                        <br>
+                        <label>Батерија:
+                            <progress max="100" value="12"></progress> 12%
                         </label>
                     </p>
             </section>
@@ -83,10 +137,22 @@
                         <label>Датум на градење на тревникот:
                             <input type="date" value="2024-06-01">
                         </label>
+                        <br>
+                        <label><input type="checkbox" checked> Вклучен</label>
+                        <br>
+                        <label>Батерија:
+                            <progress max="100" value="85"></progress> 85%
+                        </label>
                     </p>
                     <p>
                         <label>УВ индекс:
                             <input type="number" value="5" readonly>
+                        </label>
+                        <br>
+                        <label><input type="checkbox" checked> Вклучен</label>
+                        <br>
+                        <label>Батерија:
+                            <progress max="100" value="40"></progress> 40%
                         </label>
                     </p>
                     <p>
@@ -96,6 +162,12 @@
                                 <option value="vlazna" selected>Влажна</option>
                                 <option value="mokra">Мокра</option>
                             </select>
+                        </label>
+                        <br>
+                        <label><input type="checkbox" checked> Вклучен</label>
+                        <br>
+                        <label>Батерија:
+                            <progress max="100" value="95"></progress> 95%
                         </label>
                     </p>
 
@@ -113,6 +185,18 @@
                         <summary>Дневна: температурата е во ред</summary>
                         <p>Правило: 20 &lt; температура &lt; 24 °C.</p>
                         <p>Моментална вредност: <strong>22 °C</strong>.</p>
+                    </details>
+
+                    <details>
+                        <summary>Дневна: сензорот за влажност е исклучен</summary>
+                        <p>Правило: сите сензори треба да бидат вклучени, а батеријата над 20%.</p>
+                        <p>Сензорот е <strong>исклучен</strong>, а батеријата е на <strong>5%</strong>. Заменете ја батеријата.</p>
+                    </details>
+
+                    <details>
+                        <summary>Кујна: ниска батерија на тајмерот за печка</summary>
+                        <p>Правило: батерија &lt; 20% е ниска.</p>
+                        <p>Моментална вредност: <strong>12%</strong>. Заменете ја батеријата наскоро.</p>
                     </details>
             </section>
         </main>
