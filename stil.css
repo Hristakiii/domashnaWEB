@@ -1,0 +1,21 @@
+body 
+{
+    background-color: rgb(82, 80, 80);
+    font-family: "Courier New" ,monospace;
+}
+
+nav {color: rgba(255, 255, 255, 0.637);}
+input {accent-color: rgb(239, 244, 245);}
+progress{accent-color: rgb(14, 216, 41);}
+h1{text-shadow: -4px 4px 6px dimgray;}
+a{color: rgb(239, 244, 245);}
+a:hover{text-decoration:none;}
+
+footer
+{
+    background-image: url(feit-logo.png);
+    background-position-y: bottom ;
+    background-size: 60px auto;
+    padding-bottom: 70px;
+    background-repeat: no-repeat;
+}
